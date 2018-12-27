@@ -10,6 +10,9 @@
     ]
   },
   "scripts": {
-    "web": "yarn workspace @frontowiec/web start"
+    "web": "concurrently --kill-others \"yarn workspace @frontowiec/web start\" \"yarn workspace @frontowiec/shared compile \" "
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0"
   }
 }

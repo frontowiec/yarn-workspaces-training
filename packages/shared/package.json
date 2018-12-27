@@ -1,9 +1,12 @@
 {
   "name": "@frontowiec/shared",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "dist",
   "license": "MIT",
   "dependencies": {
     "rxjs": "^6.3.3"
+  },
+  "scripts": {
+    "compile": "tsc -b -w"
   }
 }
